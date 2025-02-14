@@ -64,11 +64,12 @@ button {
 }
 
 img {
-    display: inline; 
+    display: block; 
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: auto;
     margin-bottom: 32px;
     background-color: blue;
+
 }
 
 ul li,
