@@ -30,10 +30,6 @@ a {
     margin: 5px;
     height: 70px;
     width: 800px;
-    display: block;
-    box-sizing: border-box; 
-    margin-right: auto;
-    margin-left: auto;
 }
 
 h1,
@@ -45,17 +41,12 @@ h2 {
 button {
     background-color: rgb(61, 153, 199);
     color: aliceblue;
-    margin: 12px 30px;
+    margin: 12px;
     border: 2px solid rgb(52, 109, 158);
     height: 20px;
     width: 110px;
     box-sizing: content-box;
-    display: inline;
     /* position: fixed; */
-}
-
-.hot {
-    margin-left: 420px;
 }
 
 .button-pages {
@@ -93,3 +84,15 @@ ol {
     margin-bottom: 35px;
 }
 
+.home-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* container */
+.buttons-home  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: auto;
+}
