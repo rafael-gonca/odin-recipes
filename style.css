@@ -1,6 +1,9 @@
 * {
     /* outline: 2px solid red; */
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: "Times New Roman", Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
 *,
@@ -9,49 +12,69 @@
     box-sizing: border-box;
 }
 
+
 html {
     box-sizing: border-box;
-    background-color: rgb(61, 153, 199, 50%);
+    background-color: rgb(36, 36, 36);
 }
 
 a {
     text-decoration: none;
-    color: bisque;
+    color: rgb(36, 36, 36);
     /* link com cor e sem sublinhado */
 }
 
 
 .home-title {
     text-align: center;
-    color: bisque;
-    background-color: rgb(61, 153, 199);
+    color: rgb(184, 176, 167);
+    font-size: 70px;
+    /* background-color: rgb(61, 153, 199); */
     padding: 10px;
-    border: 3px solid rgb(52, 109, 158);
+    /* border: 3px solid rgb(52, 109, 158); */
     margin: 5px;
-    height: 70px;
-    width: 800px;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
 }
 
 h1,
 h2 {
     text-align: center;
-    color: bisque;
+    color: rgb(184, 176, 167);
 }
 
 button {
-    background-color: rgb(61, 153, 199);
-    color: aliceblue;
-    margin: 12px;
-    border: 2px solid rgb(52, 109, 158);
-    height: 20px;
-    width: 110px;
+    background-color: rgb(184, 176, 167);
+    color: rgb(36, 36, 36);
+    
+    border: 2px solid rgb(128, 114, 99);
+    border-radius: 30px;
+    height: 40px;
+    width: 130px;
     box-sizing: content-box;
-    /* position: fixed; */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* flex: 1; */
+    font-family: "Inter", "Times New Roman", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button:hover {
+    background-color:  rgb(128, 114, 99);
 }
 
 .button-pages {
     position: fixed;
-    background-color: rgb(28, 127, 177);
+    margin-left: 10px;
+    background-color: rgb(158, 149, 138);
+    height: 35px;
+    width: 140px;
+    font-size: 15px;
 }
 
 img {
@@ -59,40 +82,76 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
-    background-color: blue;
-
+    border: 5px solid rgb(184, 145, 103);
 }
 
 ul li,
 ol li,
 .description {
-    font-size: 20px;
-    color: rgb(9, 53, 92);
+    font-size: 30px;
+    color: rgb(170, 149, 125);
+    font-family: "Times New Romans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.pages-title,
 h2 {
-    background: rgb(61, 153, 199);
-    margin: -16px -16px 16px -16px;
-    padding: 16px;
+    /* background-color: rgb(184, 176, 167); */
+    padding: 1rem;
+    border: 3px solid rgb(184, 145, 103);
+    border-radius: 90px 20%;
+    height: 74px;
+    width: 350px;
+    font-size: 30px;
+    background-color: rgb(49, 49, 49);
+    margin-top: 50px;
     /* 16px = 1rem */
+    
+}
+
+.pages-title {
+    padding: 10px;
+    margin: 5px auto 20px;
+    font-size: 70px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
 }
 
 .description,
 ul,
 ol {
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
+    padding-left: 70px;
 }
 
 .home-title-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* container */
 .buttons-home  {
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    margin: auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttons-home button {
+    height: 40px;
+    width: 130px;
+    flex: initial; /* 0 1 auto */
+}
+
+.buttons-home .choco {
+    flex: none; /* 0 0 auto */
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
 }

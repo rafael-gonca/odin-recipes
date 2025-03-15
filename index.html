@@ -7,6 +7,11 @@
     <title>Recipes</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+
 </head>
 
 <body>
@@ -14,10 +19,16 @@
         <h1 class="home-title">My Recipes</h1>
     </div>
     <div class="buttons-home">
-        <button class="hot"><a href="./recipes/hot-dog-burnt-ends.html">Hot Dog Burnt Ends</a></button>
-        <button class="choco"><a href="./recipes/chocolate-mousse.html">Chocolate Mousse</a></button>
-        <button class="but"><a href="./recipes/butter-cookies.html">Butter Cookies</a></button>
+        <button class="hot" onclick="redirectToPage('./recipes/hot-dog-burnt-ends.html')">Hot Dog Burnt Ends</button>
+        <button class="choco" onclick="redirectToPage('./recipes/chocolate-mousse.html')">Chocolate Mousse</button>
+        <button class="but" onclick="redirectToPage('./recipes/butter-cookies.html')">Butter Cookies</a></button>
     </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;  // Redireciona para a página especificada
+        }
+    </script>
 </body>
 
 
